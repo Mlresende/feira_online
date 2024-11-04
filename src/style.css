@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-main: #01c117;
+    --color-main-2: #02d830;
+    --color-aside: #f3f7fb;
+    --color-button-aside: #d9dce0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 30px 77vh 13%;
+}
+
+header {
+    background-color: var(--color-main);
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-top: 23px;
+    color: white;
+}
+
+nav {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px 0px;
+}
+.produto{
+    padding: 0px 20px;
+}
+
+#lista-nav-plataforma {
+    background-color: var(--color-main-2);
+}
+
+#conteudo-lista-nav {
+    display: flex;
+}
+
+li {
+    padding: 7px;
+    padding-right: 15px;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin: 7px;
+    border-radius: 20px;
+    background-color: var(--color-aside);
+}
+
+.titulo-secundario {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#form-criar-objeto {
+    padding-left: 20px;
+}
+
+.entrada-dados {
+    margin-bottom: 7px;
+}
+
+aside {
+    grid-column: 1;
+    grid-row: 3/4;
+    background-color: #f3f7fb;
+}
+
+.botoes-aside {
+    padding: 14px;
+    width: 100%;
+    background-color: var(--color-button-aside);
+    border-style: solid;
+    border-width: 0.5px;
+    border-top: none;
+    border-right: none;
+}
+
+footer {
+    grid-column: 1/4;
+    background-color: #01c117;
+}
